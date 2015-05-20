@@ -1,3 +1,5 @@
-# example_nut/
+# Example application using the `nut` vendoring tool
 
-This is an awesome Go projeect.
+* Import paths are rewritten
+* Users can continue to use the `go build` command to build their application.
+
