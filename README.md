@@ -5,11 +5,11 @@
 
 # To build this application:
 
+You do not need to install `nut` to build.
 ```
 mkdir vendornut
 cd vendornut
 export GOPATH=`pwd`
-go get github.com/jbuberel/example_nut
 go build github.com/jbuberel/example_nut/nutserver/
 ```
 
