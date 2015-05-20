@@ -3,3 +3,7 @@
 name = "example_nut/"
 version = "0.0.1"
 authors = ["Your Name <you@example.com>"]
+
+[dependencies]
+
+"github.com/gorilla/mux" = ""

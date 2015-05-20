@@ -4,7 +4,7 @@ package main
 import (
   "fmt"
   "net/http"
-  "github.com/gorilla/mux"
+  "github.com/jbuberel/example_nut/vendor/_nuts/github.com/gorilla/mux"
 )
 
 func HomeHandler (w http.ResponseWriter, r *http.Request) {
