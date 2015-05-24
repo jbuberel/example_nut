@@ -19,12 +19,18 @@ The binary will be named `nutserver`
 
 * Install the [Google Cloud SDK](https://cloud.google.com/sdk/).
 * Create a project in the [Google Cloud Console](https://console.developers.google.com/project).
-* `gcloud auth login`
-* `gcloud config set project <your-project-name>`
-* `go get -u google.golang.org/appengine/cmd/aedeploy`
 
+First, make sure you're authenticated to your Google Clould account and have your default project ID set:
 ```
-$ cd nutserver
+gcloud auth login
+gcloud config set project <your-project-name>
+```
+Next, you'll need to download and install our `aedeploy` program, which will make deployment much easier:
+```
+go get -u google.golang.org/appengine/cmd/aedeploy
+```
+Make sure that the `aedeploy` command is in your command `$PATH`, and then run the following command from within the directory that contains the `app.yaml` file:
+```
 $ aedeploy gcloud --quiet preview app deploy --version myapp ./app.yaml --remote
 $ curl myapp.<your-project-name>.appspot.com
 ```
