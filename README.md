@@ -10,7 +10,7 @@ You do not need to install `nut` to build.
 mkdir vendornut
 cd vendornut
 export GOPATH=`pwd`
-go build github.com/jbuberel/example_nut/nutserver/
+go get github.com/jbuberel/example_nut
 ```
 
 The binary will be named `nutserver`
